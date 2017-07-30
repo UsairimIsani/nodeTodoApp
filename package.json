@@ -1,0 +1,20 @@
+{
+  "name": "js-playlist",
+  "version": "1.0.0",
+  "description": "CSS and asset files for the Net Ninja YouTube nodejs playlist",
+  "main": "index.js",
+  "scripts": {
+    "start":"nodemon index.js"
+  },
+ 
+  "author": "Usairim Isani",
+  "license": "ISC",
+ 
+
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "ejs": "^2.5.6",
+    "express": "^4.15.3",
+    
+  }
+}

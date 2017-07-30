@@ -1,3 +1,4 @@
+
 $(document).ready(function(){
 
   $('form').on('submit', function(){
@@ -7,10 +8,11 @@ $(document).ready(function(){
 
       $.ajax({
         type: 'POST',
-        url: '/todo',
+        url: '/',
         data: todo,
         success: function(data){
           //do something with the data via front-end framework
+          console.log("data",data)
           location.reload();
         }
       });
@@ -23,7 +25,7 @@ $(document).ready(function(){
       var item = $(this).text().replace(/ /g, "-");
       $.ajax({
         type: 'DELETE',
-        url: '/todo/' + item,
+        url: '/' + item,
         success: function(data){
           //do something with the data via front-end framework
           location.reload();
